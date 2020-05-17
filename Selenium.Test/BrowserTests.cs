@@ -33,7 +33,7 @@ namespace Selenium.Test
                 
                 var screenshot = driver.TakeScreenshot();
 
-                var filePath = "C:/Users/Andrew/Desktop/selenium-cshap-sample-master/logs_img/test_" + nameTest +  ".jpg";
+                var filePath = "logs_img/test_" + nameTest +  ".jpg";
 
                 screenshot.SaveAsFile(filePath, ScreenshotImageFormat.Jpeg);
 
@@ -517,7 +517,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void ChangePass()
         {
 
@@ -2302,7 +2302,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        [Test]
+        //[Test]
         public void AllStepsExtendedShopCart()
         {
             UITest(() =>
@@ -2369,6 +2369,7 @@ namespace Selenium.Test
         public void Cleanup()
         {
            driver?.Dispose();
+           driver.Quit();
         }
     }
 }
