@@ -93,6 +93,7 @@ namespace Selenium.Test
 
             //_driver = new ChromeDriver(option);
 
+
             driver = new ChromeDriver(pathDrivers, options);
 
             //driver = new InternetExplorerDriver(pathDrivers);
