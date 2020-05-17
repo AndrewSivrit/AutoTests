@@ -2368,8 +2368,9 @@ namespace Selenium.Test
         [TearDown]
         public void Cleanup()
         {
-           driver?.Dispose();
-           driver.Quit();
+            driver.Quit();
+            driver?.Dispose();
+           
         }
     }
 }
