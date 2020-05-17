@@ -38,7 +38,7 @@ namespace Selenium.Test
                 screenshot.SaveAsFile(filePath, ScreenshotImageFormat.Jpeg);
 
                 // This would be a good place to log the exception message and
-                // save together with the screenshot
+                // save together with the screensho
 
                 throw;
             }
