@@ -33,7 +33,7 @@ namespace Selenium.Test
                 
                 var screenshot = driver.TakeScreenshot();
 
-                var filePath = "logs_img/test_" + nameTest +  ".jpg";
+                var filePath = "../logs_img/test_" + nameTest +  ".jpg";
 
                 screenshot.SaveAsFile(filePath, ScreenshotImageFormat.Jpeg);
 
@@ -90,6 +90,8 @@ namespace Selenium.Test
             options.AddArgument("--disable-infobars");
             options.AddArgument("--disable-dev-shm-usage");
             options.AddArgument("--disable-browser-side-navigation");
+            options.AddArgument("enable-features=NetworkServiceInProcess");
+            options.AddArgument("disable-features=NetworkService");
             options.AddArgument("--disable-gpu");
 
             //_driver = new ChromeDriver(option);
