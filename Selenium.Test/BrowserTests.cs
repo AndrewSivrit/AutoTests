@@ -82,11 +82,19 @@ namespace Selenium.Test
 
             helperTest = new HelperTest();
 
-            ChromeOptions option = new ChromeOptions();
-            option.AddArgument("--headless");
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--headless");
+            options.AddArgument("start-maximized");
+            options.AddArgument("enable-automation");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-infobars");
+            options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--disable-browser-side-navigation");
+            options.AddArgument("--disable-gpu");
+
             //_driver = new ChromeDriver(option);
 
-            driver = new ChromeDriver(pathDrivers, option);
+            driver = new ChromeDriver(pathDrivers, options);
             //driver = new InternetExplorerDriver(pathDrivers);
 
             //driver.Manage().Cookies.DeleteAllCookies();
