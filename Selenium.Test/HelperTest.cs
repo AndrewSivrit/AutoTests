@@ -78,6 +78,28 @@ namespace Selenium.Test
             Thread.Sleep(500);
 
         }
+        public void UseDropDownByName(IWebDriver driver, string path, string nameOption)
+        {
+            waitElementXpath(driver, 60, path);
+
+            IWebElement DropDown = driver.FindElement(By.XPath(path));
+            var selectElement = new SelectElement(DropDown);
+            selectElement.SelectByText(nameOption);
+
+            Thread.Sleep(500);
+
+        }
+        public void UseDropDownIdByName(IWebDriver driver, string Id, string nameOption)
+        {
+            waitElementId(driver, 60, Id);
+
+            IWebElement DropDown = driver.FindElement(By.Id(Id));
+            var selectElement = new SelectElement(DropDown);
+            selectElement.SelectByText(nameOption);
+
+            Thread.Sleep(500);
+
+        }
         public void UseDropDownId(IWebDriver driver, string path, int numOption)
         {
             waitElementId(driver, 60, path);
@@ -118,12 +140,11 @@ namespace Selenium.Test
             Thread.Sleep(500);
         }
 
-        public void LoginToSite(IWebDriver driver, string urlSite, string homeUrl, string login, string password, string mainURL = "https://v2dev.cascade-usa.com/")
+        public void LoginToSite(IWebDriver driver, string urlSite, string homeUrl, string login, string password, string mainURL)
         {
 
             if ((driver.Url.Contains(mainURL)) & (!(driver.Url.Contains("auth"))))
             {
-
 
             }
             else
@@ -139,10 +160,6 @@ namespace Selenium.Test
                     IWebElement PassBox = driver.FindElement(By.Id("input-pass"));
                     PassBox.SendKeys(password);
 
-                    //IWebElement OkButton = driver.FindElement(By.Id("login_button"));
-
-                    //OkButton.Click();
-
                     JsClickElement(driver, "//*[text()='" + " Login " + "']");
 
                     Thread.Sleep(2000);
@@ -150,31 +167,7 @@ namespace Selenium.Test
 
             }
 
-
         }
 
-        //public void Forget()
-        //{
-
-        //    driver.Url = authUrl;
-
-        //    Assert.AreEqual("UI2", driver.Title);
-
-        //    IWebElement ForgetBox = driver.FindElement(By.XPath("/html/body/app-root/div/app-login/div[1]/div/div[1]/div/app-tag-button/span/span"));
-        //    ForgetBox.Click();
-
-        //    Thread.Sleep(3000);
-
-        //    IWebElement InpBox = driver.FindElement(By.Id("input-mail-forgot"));
-        //    InpBox.SendKeys(login);
-
-        //    TimeSpan ts = TimeSpan.FromTicks(300670);
-        //    WebDriverWait wait = new WebDriverWait(driver, ts);
-        //    wait.Until(ExpectedConditions.FrameToBeAvailableAndSwitchToIt(By.XPath("//iframe[starts-with(@name,'a-')]")));
-        //    IWebElement element = wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("#recaptcha-anchor > div.recaptcha-checkbox-border")));
-        //    Thread.Sleep(10000);
-        //    element.Click();
-
-        //}
     }
 }
