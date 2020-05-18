@@ -83,13 +83,13 @@ namespace Selenium.Test
             helperTest = new HelperTest();
 
             ChromeOptions options = new ChromeOptions();
-            options.AddArguments("enable-automation");
+            //options.AddArguments("enable-automation");
             options.AddArguments("--headless");
-            options.AddArguments("--window-size=1920,1080");
-            options.AddArguments("--no-sandbox");
-            options.AddArguments("--disable-extensions");
-            options.AddArguments("--dns-prefetch-disable");
-            options.AddArguments("--disable-gpu");
+            //options.AddArguments("--window-size=1920,1080");
+            //options.AddArguments("--no-sandbox");
+            //options.AddArguments("--disable-extensions");
+            //options.AddArguments("--dns-prefetch-disable");
+            //options.AddArguments("--disable-gpu");
 
             //_driver = new ChromeDriver(option);
 
