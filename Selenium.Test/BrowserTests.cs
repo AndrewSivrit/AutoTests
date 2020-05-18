@@ -84,9 +84,9 @@ namespace Selenium.Test
 
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("enable-automation");
-            //options.AddArguments("--headless");
-            //options.AddArguments("--window-size=1920,1080");
-            //options.AddArguments("--no-sandbox");
+            options.AddArguments("--headless");
+            options.AddArguments("--window-size=1920,1080");
+            options.AddArguments("--no-sandbox");
             options.AddArguments("--disable-extensions");
             options.AddArguments("--dns-prefetch-disable");
             options.AddArguments("--disable-gpu");
@@ -132,7 +132,7 @@ namespace Selenium.Test
         }
 
 
-        [Test]
+        //[Test]
         public void AddToCartFromPreview()
         {
             IWebElement Img;
@@ -193,7 +193,7 @@ namespace Selenium.Test
         }
 
 
-        [Test]
+        //[Test]
         public void CheckImagesOnPages()
         {
             IWebElement Img;
@@ -260,7 +260,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void ShoppingList()
         {
             //UITest(() =>
@@ -388,7 +388,7 @@ namespace Selenium.Test
             // }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        [Test]
+        //[Test]
         public void Comparision()
         {
             helperTest.LoginToSite(driver, authUrl, homeUrl, login, password, mainURL);
@@ -456,7 +456,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void ShipAddr()
         {
             helperTest.LoginToSite(driver, authUrl, homeUrl, login, password, mainURL);
@@ -526,7 +526,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        ////[Test]
         public void ChangePass()
         {
 
@@ -572,7 +572,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void ClearAll()
         {
             helperTest.LoginToSite(driver, authUrl, homeUrl, login, password, mainURL);
@@ -617,7 +617,7 @@ namespace Selenium.Test
             Thread.Sleep(2000);
         }
 
-        [Test]
+        //[Test]
         public void LoginWrongCreds()
         {
 
@@ -633,7 +633,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        [Test]
+        //[Test]
         public void SearchPopProduct()
         {
             UITest(() =>
@@ -675,7 +675,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void QuickOrderAndDeleteFromCart()
         {
             UITest(() =>
@@ -743,7 +743,7 @@ namespace Selenium.Test
             return value.ToString("yyyyMMddHHmmssffff");
         }
 
-        [Test]
+        //[Test]
         public void SubmitOrder()
         {
             //UITest(() =>
@@ -851,7 +851,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void submitRMAs()
         {
             UITest(() =>
@@ -920,7 +920,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void searchByHCPCS()
         {
 
@@ -970,7 +970,7 @@ namespace Selenium.Test
 
         }
 
-        [Test]
+        //[Test]
         public void searchByPartName()
         {
             Actions actions = new Actions(driver);
@@ -1034,7 +1034,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        ////[Test]
         public void Step02()
         {
 
@@ -1081,7 +1081,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step03_4()
         {
             UITest(() =>
@@ -1177,7 +1177,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        ////[Test]
         public void Step05()
         {
             UITest(() =>
@@ -1239,7 +1239,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        ////[Test]
         public void Step06()
         {
 
@@ -1293,7 +1293,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step07()
     {
             UITest(() =>
@@ -1338,7 +1338,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step08()
         {
 
@@ -1394,7 +1394,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step09()
         {
 
@@ -1456,7 +1456,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step10()
         {
             UITest(() =>
@@ -1499,7 +1499,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step11()
         {
 
@@ -1552,7 +1552,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step12()
         {
             UITest(() =>
@@ -1609,7 +1609,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        ////[Test]
         public void Step13()
         {
             UITest(() =>
@@ -1655,7 +1655,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        ////[Test]
         public void Step14()
         {
             UITest(() =>
@@ -1699,7 +1699,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step15()
         {
             UITest(() =>
@@ -1750,7 +1750,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step16()
         {
             UITest(() =>
@@ -1802,7 +1802,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step17()
 {
             UITest(() =>
@@ -1851,7 +1851,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step19()
         {
             UITest(() =>
@@ -1907,7 +1907,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step20()
         {
             UITest(() =>
@@ -1942,7 +1942,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step21()
         {
             UITest(() =>
@@ -1988,7 +1988,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step22()
         {
             UITest(() =>
@@ -2042,7 +2042,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step23()
         {
             UITest(() =>
@@ -2091,7 +2091,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step24()
         {
             UITest(() =>
@@ -2132,7 +2132,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step25()
         {
             UITest(() =>
@@ -2178,7 +2178,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step26()
         {
             UITest(() =>
@@ -2217,7 +2217,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step27()
         {
             UITest(() =>
@@ -2264,7 +2264,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void Step28()
         {
             UITest(() =>
@@ -2311,7 +2311,7 @@ namespace Selenium.Test
             }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        ////[Test]
         public void AllStepsExtendedShopCart()
         {
             UITest(() =>
