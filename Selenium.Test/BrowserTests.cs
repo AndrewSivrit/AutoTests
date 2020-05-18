@@ -84,9 +84,9 @@ namespace Selenium.Test
 
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("enable-automation");
-            options.AddArguments("--headless");
-            options.AddArguments("--window-size=1920,1080");
-            options.AddArguments("--no-sandbox");
+            //options.AddArguments("--headless");
+            //options.AddArguments("--window-size=1920,1080");
+            //options.AddArguments("--no-sandbox");
             options.AddArguments("--disable-extensions");
             options.AddArguments("--dns-prefetch-disable");
             options.AddArguments("--disable-gpu");
@@ -2377,7 +2377,7 @@ namespace Selenium.Test
         [TearDown]
         public void Cleanup()
         {
-            driver.Quit();
+            //driver.Quit();
             driver?.Dispose();
            
         }
