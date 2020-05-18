@@ -15,6 +15,7 @@ using NUnit.Framework.Interfaces;
 using System.Drawing.Imaging;
 using OpenQA.Selenium.Support.Extensions;
 
+
 namespace Selenium.Test
 {
 
@@ -83,6 +84,8 @@ namespace Selenium.Test
             helperTest = new HelperTest();
 
             ChromeOptions options = new ChromeOptions();
+            options.PageLoadStrategy = PageLoadStrategy.Eager;
+            //options.setPageLoadStrategy(PageLoadStrategy.NONE);
             //options.AddArguments("enable-automation");
             options.AddArguments("--headless");
             //options.AddArguments("--window-size=1920,1080");
