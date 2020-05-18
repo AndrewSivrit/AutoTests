@@ -87,8 +87,8 @@ namespace Selenium.Test
             //options.PageLoadStrategy = PageLoadStrategy.Eager;
             options.AddArguments("start-maximized");
             options.AddArguments("enable-automation");
-            //options.AddArguments("--no-sandbox");
-            //options.AddArguments("--disable-infobars");
+            options.AddArguments("--no-sandbox");
+            options.AddArguments("--disable-infobars");
             options.AddArguments("--disable-dev-shm-usage");
             options.AddArguments("--disable-browser-side-navigation");
             options.AddArguments("--disable-gpu");
@@ -144,7 +144,7 @@ namespace Selenium.Test
         }
 
 
-        //[Test]
+        [Test]
         public void AddToCartFromPreview()
         {
             IWebElement Img;
@@ -205,7 +205,7 @@ namespace Selenium.Test
         }
 
 
-        //[Test]
+        [Test]
         public void CheckImagesOnPages()
         {
             IWebElement Img;
@@ -255,7 +255,7 @@ namespace Selenium.Test
             for (int i = 0; i < 25; i++)
             {
 
-                if (i == 10) i += 1;
+                if (i == 2) i += 1;
                 string ids = "configurable_img_" + i.ToString();
 
                 Img = driver.FindElement(By.Id(ids));
