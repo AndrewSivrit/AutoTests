@@ -400,7 +400,7 @@ namespace Selenium.Test
             // }, driver, MethodBase.GetCurrentMethod().ToString() + DateTime.Now.ToString("yyyyMMddHHmmss"));
         }
 
-        //[Test]
+        [Test]
         public void Comparision()
         {
             helperTest.LoginToSite(driver, authUrl, homeUrl, login, password, mainURL);
@@ -451,7 +451,7 @@ namespace Selenium.Test
 
             Assert.IsTrue(bodyTextProduct.Contains("Alpha Classic® Liners"));
             Assert.IsTrue(bodyTextProduct.Contains("Alpha Hybrid® Liners"));
-            Assert.IsTrue(bodyTextProduct.Contains("AEGIS Seal-Pro TT Liner"));
+            Assert.IsTrue(bodyTextProduct.Contains("DuraGel™ LinerLow Activity Liner"));
 
             Thread.Sleep(3000);
 
