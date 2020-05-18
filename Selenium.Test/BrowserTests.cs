@@ -92,7 +92,7 @@ namespace Selenium.Test
             options.AddArguments("--disable-dev-shm-usage");
             options.AddArguments("--disable-browser-side-navigation");
             options.AddArguments("--disable-gpu");
-            options.AddArguments("--headless");
+            //options.AddArguments("--headless");
 
             //options.setPageLoadStrategy(PageLoadStrategy.NONE);
             //options.AddArguments("enable-automation");
@@ -272,7 +272,7 @@ namespace Selenium.Test
 
         }
 
-        //[Test]
+        [Test]
         public void ShoppingList()
         {
             //UITest(() =>
@@ -298,7 +298,7 @@ namespace Selenium.Test
                 helperTest.InputStringXpath(driver, "list1", "/html/body/app-root/div/app-main/div/app-shopping-list/div/div/div[1]/app-my-shopping-list/app-create-list-modal/div/div/div[2]/div[1]/div[2]/input");
                 helperTest.InputStringXpath(driver, "description if list 1", "/html/body/app-root/div/app-main/div/app-shopping-list/div/div/div[1]/app-my-shopping-list/app-create-list-modal/div/div/div[2]/div[2]/div[2]/textarea");
 
-                helperTest.JsClickElement(driver, "/html/body/app-root/div/app-main/div/app-shopping-list/div/div/div[1]/app-my-shopping-list/app-create-list-modal/div/div/div[2]/div[3]/mdb-checkbox/div/label");
+                //helperTest.JsClickElement(driver, "/html/body/app-root/div/app-main/div/app-shopping-list/div/div/div[1]/app-my-shopping-list/app-create-list-modal/div/div/div[2]/div[3]/mdb-checkbox/div/label");
                 helperTest.JsClickElement(driver, "/html/body/app-root/div/app-main/div/app-shopping-list/div/div/div[1]/app-my-shopping-list/app-create-list-modal/div/div/div[3]/button");
 
                 Thread.Sleep(4000);
@@ -629,7 +629,7 @@ namespace Selenium.Test
             Thread.Sleep(2000);
         }
 
-        //[Test]
+        [Test]
         public void LoginWrongCreds()
         {
 
