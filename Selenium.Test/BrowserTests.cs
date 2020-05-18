@@ -85,6 +85,14 @@ namespace Selenium.Test
 
             ChromeOptions options = new ChromeOptions();
             options.PageLoadStrategy = PageLoadStrategy.Normal;
+            options.AddArguments("start-maximized");
+            options.AddArguments("enable-automation");
+            options.AddArguments("--no-sandbox");
+            options.AddArguments("--disable-infobars");
+            options.AddArguments("--disable-dev-shm-usage");
+            options.AddArguments("--disable-browser-side-navigation");
+            options.AddArguments("--disable-gpu");
+
             //options.setPageLoadStrategy(PageLoadStrategy.NONE);
             //options.AddArguments("enable-automation");
             //options.AddArguments("--headless");
