@@ -84,10 +84,10 @@ namespace Selenium.Test
             helperTest = new HelperTest();
 
             ChromeOptions options = new ChromeOptions();
-            options.PageLoadStrategy = PageLoadStrategy.Eager;
+            options.PageLoadStrategy = PageLoadStrategy.Normal;
             //options.setPageLoadStrategy(PageLoadStrategy.NONE);
             //options.AddArguments("enable-automation");
-            options.AddArguments("--headless");
+            //options.AddArguments("--headless");
             //options.AddArguments("--window-size=1920,1080");
             //options.AddArguments("--no-sandbox");
             //options.AddArguments("--disable-extensions");
